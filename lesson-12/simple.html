@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson-12 Simple</title>
+
+    <style>
+        .flexbox1, .flexbox2, .flexbox3, .flexbox4 {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 20px;
+
+            font-family: Arial;
+            font-weight: bold;
+        }
+
+        .div1 {
+            background-color: black;
+            color: white;
+            width: 200px;
+        }
+
+        .div2{
+            background-color: darkgray;
+            width: 75px;
+        }
+
+        .div01 {
+            background-color: black;
+            color: white;
+
+            width: 50px;
+        }
+
+        .div02 {
+            background-color: darkgray;
+
+            flex: 1;
+        }
+
+        .div03 {
+            background-color: black;
+            color: white;
+
+            width: 75px;
+        }
+
+        .flexbox3 {
+            justify-content: space-between;
+        }
+
+        .item1, .item2, .item3 {
+            background-color: black;
+            color: white;
+        }
+
+        .flexbox4 {
+            border: 1px solid darkslategray;
+
+            justify-content: space-between;
+
+            height: 50px;
+            align-items: center;
+        }
+
+        .item01, .item02 {
+            background-color: darkslategray;
+            color: white;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="flexbox1">
+        <div class="div1">200px</div>
+        <div class="div2">75px</div>
+    </div>
+
+    <div class="flexbox2">
+        <div class="div01">div1</div>
+        <div class="div02">div2</div>
+        <div class="div03">div3</div>
+    </div>
+
+    <div class="flexbox3">
+        <div class="item1">item1</div>
+        <div class="item2">item2</div>
+        <div class="item3">item3</div>
+    </div>
+
+    <div class="flexbox4">
+        <div class="item01">item01</div>
+        <div class="item02">item02</div>
+    </div>
+</body>
+</html>

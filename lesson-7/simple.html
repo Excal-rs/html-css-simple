@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson-7 simple</title>
+
+    <style>
+        img, input {
+            display: block;
+            margin: 10px;
+        }
+        .one {
+            width: 200px;
+            border-radius: 5px;
+        }
+
+        .two {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .three {
+            --height: 100px;
+            height: var(--height);
+            width: var(--height);
+
+            object-fit: cover;
+            object-position: center;
+            
+            border-radius: calc(var(--height) / 2);
+        }
+
+        .uno {
+            border-radius: 4px;
+            border: 1px solid grey;
+        }
+
+        .dos {
+            --height: 50px;
+            width: 350px;
+
+            border: none;
+            border-radius: calc(var(--height) / 2);
+
+            box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.226);
+
+            padding: 12px 15px;
+            font-size: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <!-- https://raw.githubusercontent.com/SuperSimpleDev/html-css-course-2022/main/1-exercise-solutions/lesson-07/cat.jpg -->
+    <img src="https://raw.githubusercontent.com/SuperSimpleDev/html-css-course-2022/main/1-exercise-solutions/lesson-07/cat.jpg" class="one">
+    <img src="https://raw.githubusercontent.com/SuperSimpleDev/html-css-course-2022/main/1-exercise-solutions/lesson-07/cat.jpg" class="two">
+    <img src="https://raw.githubusercontent.com/SuperSimpleDev/html-css-course-2022/main/1-exercise-solutions/lesson-07/cat.jpg" class="three">
+
+    <input type="text" class="uno" placeholder="Search">
+    <input type="text" class="dos" placeholder="Search Google or Type a URL">
+</body>
+</html>

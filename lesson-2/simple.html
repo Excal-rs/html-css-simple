@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson-2 Simple</title>
+
+    <style>
+        * {
+            margin: none;
+            padding: none;
+        }
+
+        body {
+            font-family: Arial;
+        }
+
+        button{
+            display: block;
+            margin-bottom: 20px;
+
+            cursor: pointer;
+        }
+
+        .bootstrap-l, .bootstrap-r {
+            display: inline-block;
+        }
+
+        .linkedin-l, .linkedin-r {
+            display: inline-block;
+        }
+
+        .uber{
+            border: none;
+            background-color: black;
+            
+            color: white;
+
+            height: 40px;
+            padding: 0 20px;
+        }
+
+        .amazon {
+            --height: 37px;
+
+            border: none;
+            background-color: rgb(255, 216, 20);
+
+            height: var(--height);
+            padding: 0px 50px;
+
+            border-radius: calc(var(--height) * 0.5);
+        }
+
+        .github {
+            border: none;
+            background-color: rgb(46, 164, 79);
+
+            color: white;
+            font-weight: bold;
+
+            height: 40px;
+            padding: 0 20px;
+
+            border-radius: 4px;
+        }
+
+        .bootstrap-l {
+            border: none;
+            background-color: rgb(121, 82, 179);
+
+            color: white;
+            font-weight: bold;
+
+            height: 40px;
+            padding: 0 20px;
+
+            border-radius: 3px;
+        }
+
+        .bootstrap-r {
+            --colour: rgb(108,117,125);
+
+            border: 1px solid var(--colour);
+            background-color: white;
+
+            color: var(--colour);
+            font-weight: bold;
+
+            height: 40px;
+            padding: 0 20px;
+
+            border-radius: 3px;
+        }
+
+        .linkedin-l {
+            border: none;
+            background-color: rgb(10, 102, 194);
+
+            color: white;
+            font-weight: bold;
+
+            height: 35px;
+            padding: 0 20px;
+
+            border-radius: calc(35px / 2);
+        }
+
+        .linkedin-r {
+            --colour: rgb(10, 102, 194);
+
+            border: 1px solid var(--colour);
+            background-color: white;
+
+            color: var(--colour);
+            font-weight: bold;
+
+            height: 35px;
+            padding: 0 20px;
+
+            border-radius: calc(35px / 2);
+        }
+    </style>
+</head>
+<body>
+    <button class="uber">Request Now</button>
+    
+    <button class="amazon">Add to cart</button>
+    
+    <button class="github">Sign up</button>
+    
+    <button class="bootstrap-l">Get started</button>
+    <button class="bootstrap-r">Download</button>
+
+    <br>
+
+    <button class="linkedin-l">Apply to company website</button>
+    <button class="linkedin-r">Save</button>
+    
+</body>
+</html>

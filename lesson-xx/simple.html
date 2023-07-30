@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson-xx Simple</title>
+
+
+    <!-- I misunderstood the lesson and used flexbox instead of grid. -->
+    <style>
+
+        div {
+            margin: 10px 0;
+        }
+
+        .flexone {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .divone {
+            background-color: red;
+            width: 200px;
+        }
+
+        .divtwo{
+            background-color: blue;
+            color: white;
+            width: 75px;
+        }
+
+        .flextwo {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .div1{
+            background-color: red;
+            width: 50px;
+        }
+
+        .div2 {
+            background-color: blue;
+            color: white;
+            flex: 1;
+        }
+
+        .div3 {
+            background-color: red;
+            width: 75px;
+        }
+    </style>
+</head>
+<body>
+    <div class="flexone">
+        <div class="divone">200px</div>
+        <div class="divtwo">75px</div>
+    </div>
+
+    <div class="flextwo">
+        <div class="div1">col1</div>
+        <div class="div2">col2</div>
+        <div class="div3">col3</div>
+    </div>
+
+</body>
+</html>

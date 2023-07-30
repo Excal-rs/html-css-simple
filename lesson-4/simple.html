@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson-4 simple</title>
+
+    <style>
+        .pg-nav {
+            height: 40px;
+            width: 50px;
+
+            padding: 0;
+            margin: 0;
+
+            margin: 0 5px;
+        }
+
+        .pg-num {
+            text-decoration: underline;
+            margin: 0 5px;
+
+            color: blue;
+
+            cursor: pointer;
+        
+        }
+
+        .flexbox {
+            display: flex;
+            align-items: center;
+
+        }
+
+        .stretch {
+            margin-top: 30px;
+            border: none;
+            background-color: rgb(23, 179, 23);
+
+
+            height: 30px;
+            width: 80px;
+
+            color: white;
+            font-weight: bold;
+
+            transition: all 0.15s;
+        }
+
+        .stretch:hover {
+            height: +60px;
+            width: +160px;
+        }
+
+        .DDD-things {
+            margin: 0;
+            background-color: rgb(12, 184, 12);
+
+            color: white;
+            font-weight: bold;
+
+            height: 30px;
+            width: 80px;
+
+            border: none;
+
+            margin-top: 5px;
+        }
+
+        .DDD-things:active{
+            margin-top: 7px;
+            margin-left: +2px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="flexbox">
+        <button class="pg-nav">Back</button>
+        <a class="pg-num">1</a>
+        <a class="pg-num">2</a>
+        <a class="pg-num">3</a>
+        <a class="pg-num">4</a>
+        <a class="pg-num">5</a>
+        <button class="pg-nav">Next</button>
+    </div>
+
+    <div>
+        <button class="stretch">
+            stretch
+        </button>
+    </div>
+        <button class="DDD-things">
+            3D things
+        </button>
+    <div>
+
+    </div>
+</body>
+</html>
