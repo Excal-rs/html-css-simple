@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson-13 simple</title>
+
+    <style>
+        .flexy1 {
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        .flexy1 .one {
+            background-color: blue;
+            width: 100px;
+
+            display: flex;
+            height: 50px;
+
+            align-items: center;
+            justify-content: center;
+        }
+
+        .flexy1 .two{
+            background-color: red;
+            width: 200px;
+        }
+        
+        .flexy2 {
+            margin-top: 50px;
+            display: flex;
+            flex-direction: row;
+            
+        }
+        
+        .flexy2 .one {
+            background-color: blue;
+            width: 100px;
+        }
+
+        .flexy2 .two{
+            background-color: red;
+            width: 200px;
+
+            height: 60px;
+        }
+
+        .internal-flex {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div class="flexy1">
+        <div class="one">
+            <div class="item1">Item1</div>
+        </div>
+        <div class="two"></div>
+    </div>
+
+    <div class="flexy2">
+        <div class="one"></div>
+        <div class="two">
+            <div>row 1</div>
+            <div class="internal-flex">
+                <div>Row2</div>
+                <div>Row2</div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
